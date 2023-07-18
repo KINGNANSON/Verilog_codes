@@ -1,0 +1,31 @@
+module literalvalues ();
+
+reg [7:0] x;
+
+initial begin
+    
+    x= 8'd137;
+    $display("x= %d", x);
+
+     x= 8'h89;
+    $display("x= %x", x);
+
+     x= 8'b1000_1001;
+    $display("x= %b", x);
+
+     x= 8'o211;
+    $display("x= %o", x);
+
+     x= 8'hz1;
+    $display("x= %b", x);
+
+     x= 1'b1;
+    $display("x= %b", x);
+
+     x= 12'b1111_1111_0000;
+    $display("x= %b", x);
+
+
+end
+    
+endmodule
